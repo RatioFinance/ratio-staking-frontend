@@ -1,0 +1,116 @@
+.layer {
+  &__mobile {
+    height:100vh;
+    width:100vw;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Poppins-Medium';
+    font-size: 17px;
+    color: var(--unnamed-color-002332);
+    text-align: center;
+    p {
+      margin-top: 20px;
+    }
+  }
+  overflow-y: hidden;
+
+  // &::before {
+  //   @include respond-to(sm) {
+  //     display: none;
+  //   }
+  //   content: '';
+  //   position: absolute;
+  //   top: -169.42041015625px;
+  //   left: -238.78857421875px;
+  //   width: 705px;
+  //   height: 730px;
+  //   z-index: 0;
+  //   transform: matrix(0.97, -0.26, 0.26, 0.97, 0, 0);
+  //   background: transparent
+  //     linear-gradient(
+  //       180deg,
+  //       #a0d4ff 0%,
+  //       #d48ec5 33%,
+  //       #ffc2ac 58%,
+  //       #ffe9b1 86%,
+  //       #fff5c7 100%
+  //     )
+  //     0% 0% no-repeat padding-box;
+  //   opacity: 0.4;
+  //   filter: blur(50px);
+  // }
+  // &::after {
+  //   @include respond-to(md) {
+  //     display: none;
+  //   }
+  //   content: '';
+  //   position: fixed;
+  //   left: 100px;
+  //   bottom: 0px;
+  //   z-index: -1;
+  //   right: 0px;
+  //   height: 400px;
+  //   transform: rotate(0deg);
+  //   background-image: url('../assets/images/Footer.png');
+  //   background-repeat: no-repeat;
+  //   filter: blur(50px);
+  // }
+  &_container {
+    // background-color: var(--background);
+    // @include respond-to(md) {
+    //   margin-left: 0px;
+    // }
+    // margin-left: 300px;
+    min-height: 100vh;
+    &--collapse {
+      margin-left: 120px;
+    }
+    &--empty {
+      margin-left: 0px;
+    }
+  }
+  &__empty {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    img {
+      width: 400px;
+      // @include respond-to(sm) {
+      //   width: 300px;
+      // }
+    }
+    h4 {
+      font-size: 18px;
+      font-family: 'Poppins-Medium';
+      color: var(--unnamed-color-3c4760);
+    }
+    h6 {
+      font-size: 14px;
+      font-family: 'Poppins-Regular';
+      color: var(--unnamed-color-002332);
+    }
+  }
+  &__social {
+    display: flex;
+    justify-content:center;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border: 1px solid rgba(var(--secondary-border), 0.3);
+      border-radius: 8px;
+      margin-bottom: 0px;
+      img {
+        width: 30px;
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

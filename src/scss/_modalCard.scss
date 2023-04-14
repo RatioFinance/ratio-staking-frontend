@@ -1,0 +1,97 @@
+.modalCard {
+  margin-top: 40px;
+  &__title {
+    font-family: 'Poppins-Medium';
+    font-size: 18px;
+    letter-spacing: -0.36px;
+    color: var(--unnamed-color-3c4760);
+    opacity: 1;
+  }
+  &__cardbody {
+    border: 1px solid var(--unnamed-color-f9fbfe);
+    border-radius: 16px;
+  }
+  &__entervault {
+    padding: 14px 12px;
+    font-family: 'Poppins-Medium';
+    font-size: 15px;
+    min-width: 112px;
+    margin-bottom: 0.5rem;
+  }
+  &__fillBtn {
+    padding: 16px 20px;
+    font-family: 'Poppins-Medium';
+    font-size: 15px;
+    min-width: 112px;
+  }
+  &__gradientBtn {
+    padding: 14px 20px;
+    font-family: 'Poppins-Medium';
+    font-size: 15px;
+    color: #0f6eff;
+    min-width: 112px;
+    border: 2px solid #0f6eff;
+  }
+
+  &__header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    label {
+      font-size: 14px;
+      color: var(--unnamed-color-4c646f);
+      margin-bottom: 3px;
+    }
+    &-icon {
+      margin-left: -10px;
+    }
+    &_tokenName {
+      margin-left: 10px;
+      p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: var(--unnamed-color-4c646f);
+        font-family: 'Poppins-SemiBold';
+      }
+      h6 {
+        font-family: 'Poppins-SemiBold';
+        font-size: 18px;
+        color: #0f6eff;
+        margin-bottom: 0px;
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px solid var(--unnamed-color-f9fbfe);
+    background-color: var(--unnamed-color-f8f9f9);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 20px;
+    img {
+      width: 40px;
+      border: 1px solid rgba(#4c646f, 0.4);
+      border-radius: 100%; 
+      padding: 2px;
+      background-color: white;
+    }
+    label {
+      font-size: 14px;
+      color: var(--unnamed-color-4c646f);
+      margin-bottom: 3px;
+    }
+    p {
+      font-family: 'Poppins-SemiBold';
+      color: var(--unnamed-color-4c646f);
+    }
+    h6 {
+      font-family: 'Poppins-SemiBold';
+      font-size: 18px;
+      color: #0f6eff;
+      margin-bottom: 0px;
+    }
+  }
+}

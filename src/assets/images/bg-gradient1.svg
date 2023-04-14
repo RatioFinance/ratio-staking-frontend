@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="357" height="96" viewBox="0 0 357 96">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_1" data-name="사각형 1" width="357" height="96" fill="none" opacity="0.4"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a0d4ff"/>
+      <stop offset="0.33" stop-color="#d48ec5"/>
+      <stop offset="0.576" stop-color="#ffc2ac"/>
+      <stop offset="0.862" stop-color="#ffe9b1"/>
+      <stop offset="1" stop-color="#fff5c7"/>
+    </linearGradient>
+  </defs>
+  <g id="마스크_그룹_10" data-name="마스크 그룹 10" clip-path="url(#clip-path)">
+    <path id="패스_1132" data-name="패스 1132" d="M249.5,31.033C425.09,71.4,602.234,134.943,645.159,172.955s-64.623,36.1-240.216-4.27S52.206,64.775,9.281,26.763,73.9-9.337,249.5,31.033Z" transform="matrix(0.966, -0.259, 0.259, 0.966, -206.796, 14.326)" opacity="0.4" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

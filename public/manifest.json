@@ -1,0 +1,20 @@
+{
+  "short_name": "Ratio Web App",
+  "name": "Ratio Finance Web App",
+  "icons": [
+    {
+      "src": "logo100.png",
+      "type": "image/png",
+      "sizes": "100x100"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

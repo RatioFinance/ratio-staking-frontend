@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
-  <link rel="icon" type="image/png" href="%PUBLIC_URL%/logo100.png" />
-  <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/logo100.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Ratio Finance Web App" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo100.png" />
-  <!--
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/logo100.png" />
+    <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/logo100.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Ratio Finance Web App" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo100.png" />
+    <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <!--
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -31,115 +31,115 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <title>Ratio Finance</title>
-</head>
+    <title>Ratio Finance</title>
+  </head>
 
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <script defer src="https://analytics.zigzag.exchange/pixel/BKIOp3DaNjMJojM9"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  <script>
-    tailwind.config = {
-      darkMode: "class", // or 'media' or 'class', also darkMode increases bundle size noticeably
-      important: true,
-      theme: {
-        textIndent: {
-          none: "0rem",
-          xs: "1rem",
-          sm: "2rem",
-          md: "3rem",
-          lg: "4rem",
-        },
-        textShadow: {
-          default: "0 2px 5px rgba(0, 0, 0, 0.5)",
-          lg: "0 2px 10px rgba(0, 0, 0, 0.5)",
-        },
-        fontFamily: {
-          poppins: ["Poppins", "sans-serif"],
-        },
-        extend: {
-          screens: {
-            xs: "360px",
-            xsh: { raw: `(min-height: 360px)` },
-            smh: { raw: `(min-height: 600px)` },
-            mdh: { raw: `(min-height: 960px)` },
-            lgh: { raw: `(min-height: 1280px)` },
-            xlh: { raw: `(min-height: 1920px)` },
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script defer src="https://analytics.zigzag.exchange/pixel/BKIOp3DaNjMJojM9"></script>
+    <script src="%PUBLIC_URL%/tailwind.min.js"></script>
+    <script src="%PUBLIC_URL%/tailwindPlugins.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // or 'media' or 'class', also darkMode increases bundle size noticeably
+        important: true,
+        theme: {
+          textIndent: {
+            none: '0rem',
+            xs: '1rem',
+            sm: '2rem',
+            md: '3rem',
+            lg: '4rem',
           },
-          colors: {
-            white: {
-              100: '#00000059',
-              200: '#A4B0B5',
-              300: '#00000034',
-              400: '#D6DBDD',
-              500: '#4C646F33',
-              600: '#DBE0E2',
-              700: '#DBE0E234',
-              800: '#DBE0E233',
-              900: '#FFFFFF'
-            },
-            blue: {
-              100: '#A0D4FF',
-              200: '#5FB5FF',
-              300: '#1C7AFF',
-              400: '#075FE5',
-              500: '#0F6EFF'
-            },
-            gray: {
-              100: '#4C646F',
-              200: '#3C4760',
-              300: '#394760',
-              400: '#171a23'
-            },
-            black: {
-              100: '#002332',
-              200: '#131A37',
-              300: '#000000'
-            },
-            violet: {
-              100: '#FFC2AC',
-              200: '#D48EC5',
-              300: '#F48C57'
-            },
-            yellow: {
-              100: '#FFF5C7',
-              200: '#FFE9B1'
-            },
-            green: {
-              900: '#07B127'
-            },
-            pink: {
-              100: '#BC5CF7',
-              200: '#FF69CE'
-            },
-            background: {
-              100: "rgba(#3c4760, 0.03)",
-              200: "rgba(#3c4760, 0.05)",
-              300: "rgba(#3c4760, 0.08)",
-              400: "rgba(#3c4760, 0.13)",
-              500: "rgba(#3c4760, 0.19)",
-              600: "rgba(#3c4760, 0.32)",
-              700: "rgba(#3c4760, 0.48)",
-              800: "rgba(#3c4760, 0.72)",
-              900: "#3c4760",
-            },
+          textShadow: {
+            default: '0 2px 5px rgba(0, 0, 0, 0.5)',
+            lg: '0 2px 10px rgba(0, 0, 0, 0.5)',
           },
           fontFamily: {
-            poppins: ["Poppins", "sans-serif"],
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          extend: {
+            screens: {
+              xs: '360px',
+              xsh: { raw: `(min-height: 360px)` },
+              smh: { raw: `(min-height: 600px)` },
+              mdh: { raw: `(min-height: 960px)` },
+              lgh: { raw: `(min-height: 1280px)` },
+              xlh: { raw: `(min-height: 1920px)` },
+            },
+            colors: {
+              white: {
+                100: '#00000059',
+                200: '#A4B0B5',
+                300: '#00000034',
+                400: '#D6DBDD',
+                500: '#4C646F33',
+                600: '#DBE0E2',
+                700: '#DBE0E234',
+                800: '#DBE0E233',
+                900: '#FFFFFF',
+              },
+              blue: {
+                100: '#A0D4FF',
+                200: '#5FB5FF',
+                300: '#1C7AFF',
+                400: '#075FE5',
+                500: '#0F6EFF',
+              },
+              gray: {
+                100: '#4C646F',
+                200: '#3C4760',
+                300: '#394760',
+                400: '#171a23',
+              },
+              black: {
+                100: '#002332',
+                200: '#131A37',
+                300: '#000000',
+              },
+              violet: {
+                100: '#FFC2AC',
+                200: '#D48EC5',
+                300: '#F48C57',
+              },
+              yellow: {
+                100: '#FFF5C7',
+                200: '#FFE9B1',
+              },
+              green: {
+                900: '#07B127',
+              },
+              pink: {
+                100: '#BC5CF7',
+                200: '#FF69CE',
+              },
+              background: {
+                100: 'rgba(#3c4760, 0.03)',
+                200: 'rgba(#3c4760, 0.05)',
+                300: 'rgba(#3c4760, 0.08)',
+                400: 'rgba(#3c4760, 0.13)',
+                500: 'rgba(#3c4760, 0.19)',
+                600: 'rgba(#3c4760, 0.32)',
+                700: 'rgba(#3c4760, 0.48)',
+                800: 'rgba(#3c4760, 0.72)',
+                900: '#3c4760',
+              },
+            },
+            fontFamily: {
+              poppins: ['Poppins', 'sans-serif'],
+            },
           },
         },
-      },
-      variants: {
-        animation: ["responsive", "motion-safe", "motion-reduce"],
-        textIndent: ["responsive"],
-        extend: {},
-      },
-    }
-  </script>
-  <div id="root"></div>
-  <!--
+        variants: {
+          animation: ['responsive', 'motion-safe', 'motion-reduce'],
+          textIndent: ['responsive'],
+          extend: {},
+        },
+      };
+    </script>
+    <div id="root"></div>
+    <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -149,6 +149,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-</body>
-
+  </body>
 </html>

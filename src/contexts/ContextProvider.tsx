@@ -36,28 +36,8 @@ const STRATEGY: 'speed' | 'weight' | 'queue' = 'queue';
 const ENDPOINTS = [
   {
     name: 'Main RPC',
-    url: process.env.REACT_APP_PUBLIC_SOLANA_RPC_URL,
+    url: 'https://solana-mainnet.rpc.extrnode.com/23dfeb3c-d6df-44ae-8085-a7a0a7e403e0',
     weight: 80,
-  },
-  {
-    name: 'Extr Node RPC Balancer',
-    url: 'https://solana-mainnet.rpc.extrnode.com',
-    weight: 50,
-  },
-  {
-    name: 'Metaplex RPC',
-    url: 'https://api.metaplex.solana.com',
-    weight: 10,
-  },
-  {
-    name: 'Project Serum RPC',
-    url: 'https://solana-api.projectserum.com',
-    weight: 10,
-  },
-  {
-    name: 'Project Serum RPC',
-    url: 'https://solana-api.tt-prod.net',
-    weight: 10,
   },
   {
     name: 'Mainnet Beta RPC',
